@@ -136,6 +136,7 @@ func (f *pushDatabaseOpts) RemovePushServiceProviderFromService(service string, 
 
 func (f *pushDatabaseOpts) AddPushServiceProviderToService(service string,
 	push_service_provider *push.PushServiceProvider) error {
+	logger.Errorf("Reached in AddPushServiceProviderToService")
 	if push_service_provider == nil {
 		return nil
 	}
